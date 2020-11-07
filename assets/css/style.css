@@ -1,25 +1,32 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
   }
-
-
-header {
-        image-rendering: cover;
-        height: 10%;
+  .bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
 }
 
-  h1 {text-align: center; font-size: x-large; color: blue; background-color: darkgrey;}
-  p {text-align: center;}
-  div {text-align: center;}
-  
+ 
+.header {
+  text-align: center; font-size: x-large; color: blue; background-color: darkgrey;
+  text-align: center;
+  text-align: center;
+}
+   
   
   .flex-container {
-    display: wrap;
+    justify-content: center;
     background-color: DodgerBlue;
   }
   .flex-container > div {
     background-color: #f1f1f1;
     margin: 10px;
-    padding: 20px;
+    padding: 50px;
     font-size: 30px;
   }
