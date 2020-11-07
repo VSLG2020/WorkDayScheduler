@@ -1,0 +1,9 @@
+* {
+    box-sizing: border-box;
+  }
+
+ 
+  h1 {text-align: center; font-size: x-large; color: blue; background-color: darkgrey;}
+  p {text-align: center;}
+  div {text-align: center;}
+
