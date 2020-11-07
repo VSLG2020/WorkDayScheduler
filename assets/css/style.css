@@ -1,23 +1,25 @@
 * {
     box-sizing: border-box;
   }
-body {
-  border: 1px solid black;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-right: 10px;
-  margin-left: 10px;
-  padding: 10px;
-  background-color: rgb(73, 9, 156);
+
+
+header {
+        image-rendering: cover;
+        height: 10%;
 }
 
-.jumbotron {
-        background-image: url("./assests/images/flower-calender.png");
-        background-size: cover;
-        height: 100%;}
-
- 
   h1 {text-align: center; font-size: x-large; color: blue; background-color: darkgrey;}
   p {text-align: center;}
   div {text-align: center;}
-
+  
+  
+  .flex-container {
+    display: wrap;
+    background-color: DodgerBlue;
+  }
+  .flex-container > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+  }
