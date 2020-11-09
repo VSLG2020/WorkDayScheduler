@@ -13,28 +13,84 @@
     z-index: 0;
 }
 
-nav {
-    display: cover; background-color: lightblue; padding: 1px;
-
 }
- 
+.btn-group button {
+    background-color: #8db3be;
+    border: 1px solid rgb(71, 104, 98); 
+    margin: 5px;
+    color: white; 
+    padding: 8px 10px; 
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+  }
+
+.form-inline {
+    color: white;
+    border-color: solid rgb(71, 104, 98);
+}
+.btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .btn-group button:hover {
+    background-color:green;
+  }
+
 h1 {
-    background-color: lightyellow; border: 2px; border-color: black; font-display: large;
+    text-align: center;
+    background-color: lightyellow; 
+    border: 2px; 
+    border-color: black;
+     font-display: large;
 }
 .header {
   text-align: center; font-size: x-large; color: blue; background-color: darkgrey;
   text-align: center;
   text-align: center;
 }
-   
+
+nav {
+    display: inline-block; background-color: lightblue; padding: 1px; 
+
+}
+
+.lead {
+    font-size: 20px;
+    font-weight: 300;
+    color: black;
+    text-align: center;
+    background-color: lightyellow;
+}
+
+h2 {
+    font-size: 20px;
+    background-color: lavender;
+    font-style: oblique;
+    width: fit-content;
+    text-align: center;
+    margin: auto;
+}   
   
   .flex-container {
     justify-content: center;
+    display: flex;
+    width: fit-content;
+    float: center;
     background-color: rgb(166, 147, 233);
+    margin: auto;
   }
   .flex-container > div {
+    align-content: center;
     background-color: #f1f1f1;
-    margin: 25px;
-    padding: 25px;
-    font-size: 25px;
+    margin: 5px;
+    padding: 5px;
+    font-size: 15px;}
+ 
+  #WD {
+      font-style: italic; 
+      font-size: 10px;
+      text-align: left;
   }
+ 
+  
