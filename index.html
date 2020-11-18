@@ -1,5 +1,4 @@
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,12 +13,10 @@
    
 
 </head>
-
-
 <body>
     <script src="https://code.jquery.com/jquery.js"></script>
     <!--  <img id="background-img" class="bg" src="./assets/images/flower-calender.png" alt> -->
-
+<!--header-->
     <header>
         <div class="container">
             <div class="col lg 8">
@@ -28,6 +25,7 @@
             </div>
         </div>
     </header>
+<!--navbar-->
     <nav class="navbar">
         <div Id="navbar" class="btn-group">
             <ul>
@@ -45,7 +43,7 @@
      <!--date-->
                 <div id="current_date" class="todays-date border text large">
              </div>
-     <!--nav bar-->
+     <!--search button-->
                 <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
@@ -53,7 +51,7 @@
         </div>
     </nav>
 
-    <!--Business hours chart-->
+    <!--Open Business hours chart-->
     <section id="hours-chart">
         <div class="container">
             <div id="Chart" class="col lg ">
@@ -105,7 +103,8 @@
     <section id="scheduler">
     <div id="scheduler" class="d-flex container">
         <div class="col lg 12">
-
+            <h2> Work Day Scheduler</h2>
+            <p> Reminder: Shifts start 30 min prior to hour of event scheduled.</p>
             <div id="hour-10" class="row time-block">
                 <div class="col-md-1 hour border">
                     <h5>10am</h5>
@@ -292,5 +291,4 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
          <script src="./assets/js/script.js"></script>
  </body>
-
 </html>
