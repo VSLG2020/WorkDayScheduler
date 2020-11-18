@@ -5,7 +5,7 @@
   }
   
 element.style {
-  background-image: ./assets/images/flower-calender.png;
+  background-image: "./assets/images/flower-calender.png;"
 }
   .bg {
     width: 100%;
@@ -16,16 +16,47 @@ element.style {
     z-index: 0;
 }
 
+.border {
+  border: 2px solid #dee2e6!important;
+  font-size: x-large;
+  font-style: normal;
+  font-family: monospace;
+  color: green;
 }
-.btn-group button {
-    background-color: #8db3be;
+
+a {
+  color: green;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+dl, ol, ul {
+  margin-top: 0;
+  margin-bottom: 0rem; 
+}
+nav {
+  display: inline-block; background-color: lightblue; padding: 1px; 
+
+}
+.btn-outline-success {
+  color: #28a745;
+  border-color: black;
+  background: whitesmoke;
+}
+nav ul li  {
+    background-color: #f5f6f7;
     border: 1px solid rgb(71, 104, 98); 
-    margin: 5px;
+    margin: 2px;
     color: white; 
     padding: 8px 10px; 
     cursor: pointer; /* Pointer/hand icon */
     float: left; /* Float the buttons side by side */
+    
   }
+
+  li{
+    display:inline;
+    }
 
 .form-inline {
     color: white;
@@ -51,11 +82,6 @@ h1 {
   text-align: center; font-size: x-large; color: blue; background-color: darkgrey;
   text-align: center;
   text-align: center;
-}
-
-nav {
-    display: inline-block; background-color: lightblue; padding: 1px; 
-
 }
 
 .lead {
@@ -107,4 +133,9 @@ h2 {
     background-color:green;
   }
  
-  
+  .management p {
+    font-family: sans-serif;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 15px;
+}

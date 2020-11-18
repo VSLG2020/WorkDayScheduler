@@ -29,216 +29,268 @@
         </div>
     </header>
     <nav class="navbar">
-        <div class="btn-group">
-            <button>Calender</button>
-            <button>Hours</button>
-            <button>Management</button>
+        <div Id="navbar" class="btn-group">
+            <ul>
+                <li>
+                <a href="#scheduler">Event Scheduler</a>
+                </li>
+                <li>
+                <a href="#hours-chart">Hours Open </a>
+                </li>
+                <li>
+                <a href="#management">Management</a>
+                </li>
+            </ul>
         </div>
-        <!--date-->
-        <div id="current_date" class="todays-date border">
-        </div>
-        <!--nav bar-->
-        <form class="form-inline my-2 my-lg-0">
+     <!--date-->
+                <div id="current_date" class="todays-date border text large">
+             </div>
+     <!--nav bar-->
+                <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
+             </form>
         </div>
     </nav>
 
-    <!--chart-->
-    <div class="container">
-        <div id="Chart" class="col lg ">
-            <div class="hours-title">
-                <h2>Hours of Operation</h2>
-            </div>
-            <div class="hours-chart">
-                <div class="flex-container">
-                    <div id="WD" class="Sunday">
-                        <header>Sunday</header>
-                        <p>Day Hours <br>
-                            10am-2pm<br>
-                            Night Hours <br>
-                            5pm-11pm</p>
-                    </div>
-                    <div id="WD" class="Monday">
-                        <header>Monday</header>
-                        <p>10am-11pm</p>
-                    </div>
-                    <div id="WD" class="Tuesday">
-                        <header>Tuesday</header>
-                        <p>10am-11pm</p>
-                    </div>
-                    <div id="WD" class="Wednesday">
-                        <header>Wednesday</header>
-                        <p>10am-11pm</p>
-                    </div>
+    <!--Business hours chart-->
+    <section id="hours-chart">
+        <div class="container">
+            <div id="Chart" class="col lg ">
+                <div class="hours-title">
+                    <h2>Hours of Operation</h2>
+                </div>
+                <div class="hours-chart">
+                    <div class="flex-container">
+                        <div id="WD" class="Sunday">
+                            <header>Sunday</header>
+                            <p>Day Hours <br>
+                                10am-2pm<br>
+                                Night Hours <br>
+                                5pm-11pm</p>
+                        </div>
+                        <div id="WD" class="Monday">
+                            <header>Monday</header>
+                            <p>10am-11pm</p>
+                        </div>
+                        <div id="WD" class="Tuesday">
+                            <header>Tuesday</header>
+                            <p>10am-11pm</p>
+                        </div>
+                        <div id="WD" class="Wednesday">
+                            <header>Wednesday</header>
+                            <p>10am-11pm</p>
+                        </div>
 
-                    <div id="WD" class="Thursday">
-                        <header>Thursday</header>
-                        <p>Day Hours <br>
-                            10am-5pm <br> Night Hours <br> 6pm-2am </p>
-                    </div>
-                    <div id="WD" class="Friday">
-                        <header>Friday</header>
-                        <p>Day Hours <br>
-                            10am-5pm <br> Night Hours <br> 6pm-2am </p>
-                    </div>
-                    <div id="WD" class="Saturday">
-                        <header>Saturday</header>
-                        <p>Day Hours <br>
-                            10am-5pm <br> Night Hours <br> 6pm-2am </p>
+                        <div id="WD" class="Thursday">
+                            <header>Thursday</header>
+                            <p>Day Hours <br>
+                                10am-5pm <br> Night Hours <br> 6pm-2am </p>
+                        </div>
+                        <div id="WD" class="Friday">
+                            <header>Friday</header>
+                            <p>Day Hours <br>
+                                10am-5pm <br> Night Hours <br> 6pm-2am </p>
+                        </div>
+                        <div id="WD" class="Saturday">
+                            <header>Saturday</header>
+                            <p>Day Hours <br>
+                                10am-5pm <br> Night Hours <br> 6pm-2am </p>
+                        </div>
                     </div>
                 </div>
+            </div>
+    </section>
+    <!--Drop Down Scheduler-->
+    <section id="scheduler">
+    <div id="scheduler" class="d-flex container">
+        <div class="col lg 12">
+
+            <div id="hour-10" class="row time-block">
+                <div class="col-md-1 hour border">
+                    <h5>10am</h5>
+                </div>
+                <textarea class="col-md-10 description">
+                    </textarea>
+                <button class="btn saveBtn col-md-1 border"><i class="fas fa-save"></i></button>
+            </div>
+            <!--11am-->
+            <div id="hour-11" class="row time-block">
+                <div class="col-md-1 hour border ">
+                    <h5>11am</h5>
+                </div>
+                <textarea class="col-md-10 description">
+                    </textarea>
+                <button class="btn saveBtn col-md -1 border"><i class="fas fa-save"></i></button>
+            </div>
+            <!--12pm-->
+            <div id="hour-12" class="row time-block">
+                <div class="col-md-1 hour border ">
+                    <h5>12pm</h5>
+                </div>
+                <textarea class="col-md-10 description">
+                    </textarea>
+                <button class="btn saveBtn col-md -1 border"><i class="fas fa-save"></i></button>
+            </div>
+            <!--1pm-->
+            <div id="hour-13" class="row time-block">
+                <div class="col-md-1 hour border">
+                    <h5>1pm</h5>
+                </div>
+                <textarea class="col-md-10 description">
+                    </textarea>
+                <button class="btn saveBtn col-md-1 border"><i class="fas fa-save"></i></button>
+            </div>
+            <!--2pm-->
+            <div id="hour-14" class="row time-block">
+                <div class="col-md-1 hour border">
+                    <h5>2pm</h5>
+                </div>
+                <textarea class="col-md-10 description">
+                     </textarea>
+                <button class="btn saveBtn col-md-1 border"><i class="fas fa-save"></i></button>
+            </div>
+            <!--3pm-->
+            <div id="hour-15" class="row time-block">
+                <div class="col-md-1 hour border">
+                    <h5>3pm</h5>
+                </div>
+                <textarea class="col-md-10 description">
+                    </textarea>
+                <button class="btn saveBtn col-md-1 border"><i class="fas fa-save"></i></button>
+            </div>
+            <!--4pm-->
+            <div id="hour-16" class="row time-block">
+                <div class="col-md-1 hour border">
+                    <h5>4pm</h5>
+                </div>
+                <textarea class="col-md-10 description">
+                     </textarea>
+                <button class="btn saveBtn col-md-1 border"><i class="fas fa-save"></i></button>
+            </div>
+            <!--5pm-->
+            <div id="hour-17" class="row time-block">
+                <div class="col-md-1 hour border">
+                    <h5>5pm</h5>
+                </div>
+                <textarea class="col-md-10 description">
+                     </textarea>
+                <button class="btn saveBtn col-md-1 border"><i class="fas fa-save"></i></button>
+            </div>
+            <!--6pm-->
+            <div id="hour-18" class="row time-block">
+                <div class="col-md-1 hour border">
+                    <h5>6pm</h5>
+                </div>
+                <textarea class="col-md-10 description">
+                     </textarea>
+                <button class="btn saveBtn col-md-1 border"><i class="fas fa-save"></i></button>
+            </div>
+            <!--7pm-->
+            <div id="hour-19" class="row time-block">
+                <div class="col-md-1 hour border">
+                    <h5>7pm</h5>
+                </div>
+                <textarea class="col-md-10 description">
+                     </textarea>
+                <button class="btn saveBtn col-md-1 border"><i class="fas fa-save"></i></button>
+            </div>
+            <!--8pm-->
+            <div id="hour-20" class="row time-block">
+                <div class="col-md-1 hour border">
+                    <h5>8pm</h5>
+                </div>
+                <textarea class="col-md-10 description">
+                     </textarea>
+                <button class="btn saveBtn col-md-1 border"><i class="fas fa-save"></i></button>
+            </div>
+            <!--9pm-->
+            <div id="hour-21" class="row time-block">
+                <div class="col-md-1 hour border">
+                    <h5>9pm</h5>
+                </div>
+                <textarea class="col-md-10 description">
+                     </textarea>
+                <button class="btn saveBtn col-md-1 border"><i class="fas fa-save"></i></button>
+            </div>
+            <!--10pm-->
+            <div id="hour-22" class="row time-block">
+                <div class="col-md-1 hour border ">
+                    <h5>10pm</h5>
+                </div>
+                <textarea class="col-md-10 description">
+                     </textarea>
+                <button class="btn saveBtn col-md -1 border"><i class="fas fa-save"></i></button>
+            </div>
+            <!--11pm-->
+            <div id="hour-23" class="row time-block">
+                <div class="col-md-1 hour border ">
+                    <h5>11pm</h5>
+                </div>
+                <textarea class="col-md-10 description">
+                     </textarea>
+                <button class="btn saveBtn col-md -1 border"><i class="fas fa-save"></i></button>
+            </div>
+            <!--12am-->
+            <div id="hour-24" class="row time-block">
+                <div class="col-md-1 hour border ">
+                    <h5>12pm</h5>
+                </div>
+                <textarea class="col-md-10 description">
+                     </textarea>
+                <button class="btn saveBtn col-md -1 border"><i class="fas fa-save"></i></button>
+            </div>
+            <!--1am-->
+            <div id="hour-25" class="row time-block">
+                <div class="col-md-1 hour border">
+                    <h5>1am</h5>
+                </div>
+                <textarea class="col-md-10 description">
+                    </textarea>
+                <button class="btn saveBtn col-md-1 border"><i class="fas fa-save"></i></button>
+            </div>
+            <!--2am-->
+            <div id="hour-26" class="row time-block">
+                <div class="col-md-1 hour border">
+                    <h5>2am</h5>
+                </div>
+                <textarea class="col-md-10 description">
+                     </textarea>
+                <button class="btn saveBtn col-md-1 border"><i class="fas fa-save"></i></button>
+            </div>
+            <!--3am-->
+            <div id="hour-27" class="row time-block">
+                <div class="col-md-1 hour border">
+                    <h5>3am</h5>
+                </div>
+                <textarea class="col-md-10 description">
+                    </textarea>
+                <button class="btn saveBtn col-md-1 border"><i class="fas fa-save"></i></button>
             </div>
         </div>
-        <!--Drop Down Scheduler-->
-        <div id="dropSchedule" class="d-flex container">
-            <div class="col lg 12">
+    </div>
+    </section>
+    <!--Management info-->
+    <section id="management">
+        <div class="col sm 12 border">
+        <h3>Management Contact Info</h>
+        <p>
+            General Manager <br>
+            John Smith<br>
+            Phone: (555)555-5555<br>
+            Email: JohnSmith@workManager.com <br>
+            Assistant Manager <br>
+            Jane Smith <br>
+            Phone: (444)444-4444 <br>
+            Email: JaneSmith@workManager.com </p>  
+        </div>
+        </container>
+        </section>
 
-                <div id="hour-10" class="row time-block">
-                    <div class="col-md-1 hour border">
-                        <h5>10am</h5>
-                    </div>
-                    <textarea class="col-md-10 description">
-                    </textarea>
-                    <button class="btn saveBtn col-md-1 border"><i class="fas fa-save"></i></button>
-                </div>
-                <!--11am-->
-                <div id="hour-11" class="row time-block">
-                    <div class="col-md-1 hour border ">
-                        <h5>11am</h5>
-                    </div>
-                    <textarea class="col-md-10 description">
-                    </textarea>
-                    <button class="btn saveBtn col-md -1 border"><i class="fas fa-save"></i></button>
-                </div>
-                <!--12pm-->
-                <div id="hour-12" class="row time-block">
-                    <div class="col-md-1 hour border ">
-                        <h5>12pm</h5>
-                    </div>
-                    <textarea class="col-md-10 description">
-                    </textarea>
-                    <button class="btn saveBtn col-md -1 border"><i class="fas fa-save"></i></button>
-                </div>
-                <!--1pm-->
-                <div id="hour-13" class="row time-block">
-                    <div class="col-md-1 hour border">
-                        <h5>1pm</h5>
-                    </div>
-                    <textarea class="col-md-10 description">
-                    </textarea>
-                    <button class="btn saveBtn col-md-1 border"><i class="fas fa-save"></i></button>
-                </div>
-                <!--2pm-->
-                <div id="hour-14" class="row time-block">
-                    <div class="col-md-1 hour border">                        <h5>2pm</h5>
-                    </div>
-                    <textarea class="col-md-10 description">
-                     </textarea>
-                     <button class="btn saveBtn col-md-1 border"><i class="fas fa-save"></i></button>                </div>
-                <!--3pm-->
-                <div id="hour-15" class="row time-block">
-                    <div class="col-md-1 hour border">                        <h5>3pm</h5>
-                    </div>
-                    <textarea class="col-md-10 description">
-                    </textarea>
-                    <button class="btn saveBtn col-md-1 border"><i class="fas fa-save"></i></button>                </div>
-                <!--4pm-->
-                <div id="hour-16" class="row time-block">
-                    <div class="col-md-1 hour border">                        <h5>4pm</h5>
-                    </div>
-                    <textarea class="col-md-10 description">
-                     </textarea>
-                     <button class="btn saveBtn col-md-1 border"><i class="fas fa-save"></i></button>                </div>
-                <!--5pm-->
-                <div id="hour-17" class="row time-block">
-                    <div class="col-md-1 hour border">                        <h5>5pm</h5>
-                    </div>
-                    <textarea class="col-md-10 description">
-                     </textarea>
-                     <button class="btn saveBtn col-md-1 border"><i class="fas fa-save"></i></button>                </div>
-                <!--6pm-->
-                <div id="hour-18" class="row time-block">
-                    <div class="col-md-1 hour border">                        <h5>6pm</h5>
-                    </div>
-                    <textarea class="col-md-10 description">
-                     </textarea>
-                     <button class="btn saveBtn col-md-1 border"><i class="fas fa-save"></i></button>                </div>
-                <!--7pm-->
-                <div id="hour-19" class="row time-block">
-                    <div class="col-md-1 hour border">                        <h5>7pm</h5>
-                    </div>
-                    <textarea class="col-md-10 description">
-                     </textarea>
-                     <button class="btn saveBtn col-md-1 border"><i class="fas fa-save"></i></button>                </div>
-                <!--8pm-->
-                <div id="hour-20" class="row time-block">
-                    <div class="col-md-1 hour border">                        <h5>8pm</h5>
-                    </div>
-                    <textarea class="col-md-10 description">
-                     </textarea>
-                     <button class="btn saveBtn col-md-1 border"><i class="fas fa-save"></i></button>                </div>
-                <!--9pm-->
-                <div id="hour-21" class="row time-block">
-                    <div class="col-md-1 hour border">                        <h5>9pm</h5>
-                    </div>
-                    <textarea class="col-md-10 description">
-                     </textarea>
-                     <button class="btn saveBtn col-md-1 border"><i class="fas fa-save"></i></button>                </div>
-                <!--10pm-->
-                <div id="hour-22" class="row time-block">
-                    <div class="col-md-1 hour border ">
-                        <h5>10pm</h5>
-                    </div>
-                    <textarea class="col-md-10 description">
-                     </textarea>
-                    <button class="btn saveBtn col-md -1 border"><i class="fas fa-save"></i></button>
-                </div>
-                <!--11pm-->
-                <div id="hour-23" class="row time-block">
-                    <div class="col-md-1 hour border ">
-                        <h5>11pm</h5>
-                    </div>
-                    <textarea class="col-md-10 description">
-                     </textarea>
-                    <button class="btn saveBtn col-md -1 border"><i class="fas fa-save"></i></button>
-                </div>
-                <!--12am-->
-                <div id="hour-24" class="row time-block">
-                    <div class="col-md-1 hour border ">
-                        <h5>12pm</h5>
-                    </div>
-                    <textarea class="col-md-10 description">
-                     </textarea>
-                    <button class="btn saveBtn col-md -1 border"><i class="fas fa-save"></i></button>
-                </div>
-                <!--1am-->
-                <div id="hour-25" class="row time-block">
-                    <div class="col-md-1 hour border">                        <h5>1am</h5>
-                    </div>
-                    <textarea class="col-md-10 description">
-                    </textarea>
-                    <button class="btn saveBtn col-md-1 border"><i class="fas fa-save"></i></button>                </div>
-                <!--2am-->
-                <div id="hour-26" class="row time-block">
-                    <div class="col-md-1 hour border">                        <h5>2am</h5>
-                    </div>
-                    <textarea class="col-md-10 description">
-                     </textarea>
-                     <button class="btn saveBtn col-md-1 border"><i class="fas fa-save"></i></button>                </div>
-                <!--3am-->
-                <div id="hour-27" class="row time-block">
-                    <div class="col-md-1 hour border">
-                        <h5>3am</h5>
-                    </div>
-                    <textarea class="col-md-10 description">
-                    </textarea>
-                    <button class="btn saveBtn col-md-1 border"><i class="fas fa-save"></i></button>                </div>
-                <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-            </div>
-            <script src="./assets/js/script.js"></script>
-            </body>
+    <!--personal script-->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+         <script src="./assets/js/script.js"></script>
+ </body>
 
 </html>
