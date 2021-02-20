@@ -2,16 +2,12 @@ AS AN employee with a busy schedule
 I WANT to add important events to a daily planner
 SO THAT I can manage my time effectively
 
-GIVEN I am using a daily planner to create a schedule
-WHEN I open the planner
-THEN the current day is displayed at the top of the calendar
-WHEN I scroll down
-THEN I am presented with time blocks for standard business hours
-WHEN I view the time blocks for that day
-THEN each time block is color-coded to indicate whether it is in the past, present, or future
-WHEN I click into a time block
-THEN I can enter an event
-WHEN I click the save button for that time block
-THEN the text for that event is saved in local storage
-WHEN I refresh the page
-THEN the saved events persist
+
+
+This is for those companies who use daily planners in the workforce.
+When you open our site, you will see the current day, and time displayed.
+You will also see the operation hours, depending on the day listed.
+You will be presented with time blocks, that you can add and save your daily appointments/shifts (etc) to.
+This is also saved to local storage, and will still be present if you refresh the page!
+The time blocks also have current time features, so you'll know whether the event has passed or is in the future.
+The manager/office information is also listed at the bottom of the page. 
